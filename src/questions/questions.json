@@ -1,0 +1,854 @@
+[
+  {
+    "id": 0,
+    "categoryId": 0,
+    "question": "Hangi gaz radyasyonu en iyi engeller?",
+    "choises": {
+      "a": "Helium",
+      "b": "Nitrogen",
+      "c": "Su Buharı",
+      "d": "Oksijen"
+    },
+    "trueAnswer": "a"
+  },
+  {
+    "id": 1,
+    "categoryId": 0,
+    "question": "Dünya üzerinde en yaygın olarak hangi iklim tipi bulunur?",
+    "choises": {
+      "a": "Çöl iklimi",
+      "b": "Kumluk iklimi",
+      "c": "Tundra iklimi",
+      "d": "Tropikal yağışlı iklim"
+    },
+    "trueAnswer": "d"
+  },
+  {
+    "id": 2,
+    "categoryId": 1,
+    "question": "Napoleon Bonaparte hangi yıl hükümdarlığını ilan etti?",
+    "choises": {
+      "a": "1789",
+      "b": "1804",
+      "c": "1812",
+      "d": " 1848"
+    },
+    "trueAnswer": "b"
+  },
+  {
+    "id": 3,
+    "categoryId": 2,
+    "question": "Hangi atlet 100 metre koşuda Dünya Rekoru kırdı?",
+    "choises": {
+      "a": "Usain Bolt",
+      "b": "Carl Lewis",
+      "c": " Jesse Owens",
+      "d": "Muhammad Ali"
+    },
+    "trueAnswer": "a"
+  },
+  {
+    "id": 4,
+    "categoryId": 2,
+    "question": "Hangi ikisi Türkiye 1. futbol liginden futbolcu olarak şampiyonluk yaşamamıştır?",
+    "choises": {
+      "a": "Aykut Kocaman – Ertuğrul Sağlam",
+      "b": "Ersun Yanal – Şenol Güneş",
+      "c": "Mustafa Denizli – Fatih Terim ",
+      "d": "Rıdvan Dilmen – Sergen Yalçın"
+    },
+    "trueAnswer": "c"
+  },
+  {
+    "id": 5,
+    "categoryId": 3,
+    "question": "Kur’an-ı Kerim’de hangisi üzerine yemin edilmemiştir?",
+    "choises": {
+      "a": "Deniz",
+      "b": "Güneş",
+      "c": "Arı",
+      "d": "Kalem"
+    },
+    "trueAnswer": "c"
+  },
+  {
+    "id": 6,
+    "categoryId": 3,
+    "question": "Geçti Bor'un pazarı atasözünde adı geçen Bor, hangi ilin bir ilçesidir?",
+    "choises": {
+      "a":"Niğde",
+      "b":"Nevşehir",
+      "c":"Kırşehir",
+      "d":"Aksaray"
+    },
+    "trueAnswer": "a"
+  },
+  {
+    "id": 7,
+    "categoryId":1,
+    "question": "Onluk sistemi ilk defa kuran Türk komutan kimdir?",
+    "choises": {
+      "a":"Mete Han",
+      "b":"Fatih Sultan Mehmet",
+      "c":"2. Murat",
+      "d":"Sultan Alparslan"
+    },
+    "trueAnswer": "a"
+  },
+  {
+    "id": 8,
+    "categoryId": 3,
+    "question": "333'ün 3 katı, 333'ün 3'te birinden kaç fazladır?",
+    "choises": {
+      "a":"0",
+      "b":"222",
+      "c":"555",
+      "d":"888"
+    },
+    "trueAnswer": "d"
+  },
+  {
+    "id": 9,
+    "categoryId": 3,
+    "question": "Hangi ünlü çizgi karakter genellikle sarı renkli bir şapka takar?",
+    "choises": {
+      "a":"Kirpi Sonic",
+      "b":"Hızlı Gonzales",
+      "c":"Road Runner",
+      "d":"Tazmanya Canavarı"
+    },
+    "trueAnswer": "b"
+  },
+  {
+    "id": 10,
+    "categoryId": 0,
+    "question": "Genetik biliminin kurucusu olarak kabul edilen ve bezelyelerle yaptığı çalışmalar biyoloji derslerinde anlatılan bilim insanı kimdir?",
+    "choises": {
+      "a":"Gregor Mendel",
+      "b":"Marie Curie",
+      "c":"Louis Pasteur",
+      "d":"Lev Bezelyev"
+    },
+    "trueAnswer": "a"
+  },
+  {
+    "id": 11,
+    "categoryId": 3,
+    "question": "Aşağıdaki ünlülerden hangisi üniversite mezunudur?",
+    "choises": {
+      "a":"İbrahim Tatlıses",
+      "b":"Hülya Avşar",
+      "c":"Bülent Ecevit",
+      "d":"Kadir İnanır"
+    },
+    "trueAnswer": "d"
+  },
+  {
+    "id": 12,
+    "categoryId": 1,
+    "question": "Tarihte Türk adıyla kurulan ilk Türk devleti hangisidir?",
+    "choises": {
+      "a":"İskitler",
+      "b":"Türgişler",
+      "c":"Göktürkler",
+      "d":"Hazarlar"
+    },
+    "trueAnswer": "c"
+  },
+  {
+    "id": 13,
+    "categoryId": 1,
+    "question": "Tarihte Türk adıyla kurulan ilk Türk devleti hangisidir?",
+    "choises": {
+      "a":"İskitler",
+      "b":"Türgişler",
+      "c":"Göktürkler",
+      "d":"Hazarlar"
+    },
+    "trueAnswer": "c"
+  },
+  {
+    "id": 14,
+    "categoryId": 1,
+    "question": "Museviliği kabul eden ilk Türk topluluk hangisidir?",
+    "choises": {
+      "a":"Karamanoğulları",
+      "b":"İskitler",
+      "c":"Hazarlar",
+      "d":"Harezmşahlar"
+    },
+    "trueAnswer": "c"
+  },
+  {
+    "id": 15,
+    "categoryId": 1,
+    "question": "İslamı kabul eden ilk Türk boyu hangisidir?",
+    "choises": {
+      "a":"Peçenekler",
+      "b":"Karluklar",
+      "c":"Hazarlar",
+      "d":"Kayılar"
+    },
+    "trueAnswer": "b"
+  },
+  {
+    "id": 16,
+    "categoryId": 1,
+    "question": "Nizamülmük hangi Türk devleti döneminde vezirlik yapmıştı?",
+    "choises": {
+      "a":"Osmanlılar",
+      "b":"Karahanlılar",
+      "c":"Selçuklular",
+      "d":"Uygurlar"
+    },
+    "trueAnswer": "c"
+  },
+  {
+    "id": 17,
+    "categoryId": 1,
+    "question": "Hangi isyan Anadolu Selçuklular döneminde çıkmıştır?",
+    "choises": {
+      "a":"Celali İsyanları",
+      "b":"Şeyh Bedrettin",
+      "c":"Buçuktepe",
+      "d":"Babai"
+    },
+    "trueAnswer": "d"
+  },
+  {
+    "id": 18,
+    "categoryId": 1,
+    "question": "İlk defa halifelik ünvanını kullanan Osmanlı padişahı hangisidir?",
+    "choises": {
+      "a":"Yavuz Sultan Selim",
+      "b":"Fatih Sultan Mehmet",
+      "c":"Kanuni Sultan Süleyman",
+      "d":"II.Murat"
+    },
+    "trueAnswer": "a"
+  },
+  {
+    "id": 19,
+    "categoryId": 1,
+    "question": "Yeniçerilik hangi padişah döneminde kaldırıldı?",
+    "choises": {
+      "a":"II.Abdülhamit",
+      "b":"I.Abdülhamit",
+      "c":"II.Murat",
+      "d":"II.Mahmud"
+    },
+    "trueAnswer": "d"
+  },
+  {
+    "id": 20,
+    "categoryId": 1,
+    "question": "Sarıkamış Felaketi sırasında Milli Savunma Bakanı kimdi?",
+    "choises": {
+      "a":"Cemal Paşa",
+      "b":"Ahmet Paşa",
+      "c":"Enver Paşa",
+      "d":"Talat Paşa"
+    },
+    "trueAnswer": "c"
+  },
+  {
+    "id": 21,
+    "categoryId": 2,
+    "question": "Hentbol oyununda bir takımdaki kişi sayısı kaçtır?",
+    "choises": {
+      "a":"7",
+      "b":"8",
+      "c":"9",
+      "d":"10"
+    },
+    "trueAnswer": "a"
+  },
+  {
+    "id": 22,
+    "categoryId": 2,
+    "question": "Basketbolda bir takım maç boyunca en fazla kaç mola alabilir?",
+    "choises": {
+      "a":"3",
+      "b":"2",
+      "c":"6",
+      "d":"5"
+    },
+    "trueAnswer": "d"
+  },
+  {
+    "id": 23,
+    "categoryId": 2,
+    "question": "Trabzonsporun kuruluş tarihi nedir?",
+    "choises": {
+      "a":"1 Mart 1932",
+      "b":"2 Ağustos 1967",
+      "c":"6 Ocak 1961",
+      "d":"2 Nisan 1926"
+    },
+    "trueAnswer": "b"
+  },
+  {
+    "id": 24,
+    "categoryId": 2,
+    "question": "Jay Cutler hangi spor branşında ün kazanmıştır?",
+    "choises": {
+      "a":"Basketbol",
+      "b":"Futbol",
+      "c":"Yüzme",
+      "d":"Vücut Geliştirme"
+    },
+    "trueAnswer": "d"
+  },
+  {
+    "id": 25,
+    "categoryId": 0,
+    "question": "Dünya hangi yöne doğru dönmektedir?",
+    "choises": {
+      "a":"Batıdan Doğuya",
+      "b":"Güneyden Kuzeye",
+      "c":"Doğudan Batıya",
+      "d":"Kuzeyden Güneye"
+    },
+    "trueAnswer": "a"
+  },
+  {
+    "id": 26,
+    "categoryId": 0,
+    "question": "Türkiye'de Jeolojinin Babası diye anılan jeoloji profesörü kimdir?",
+    "choises": {
+      "a":"Ahmet Sertaç",
+      "b":"Celal Şengör",
+      "c":"Mustafa Çelik",
+      "d":"İhsan Ketin"
+    },
+    "trueAnswer": "d"
+  },
+  {
+    "id": 28,
+    "categoryId": 0,
+    "question": "Tüm elementler arasında en hafif olan element hangisidir?",
+    "choises": {
+      "a":"Azot",
+      "b":"Silisyum",
+      "c":"Hidrojen",
+      "d":"Helyum"
+    },
+    "trueAnswer": "c"
+  },
+  {
+    "id": 29,
+    "categoryId": 0,
+    "question": "Bitkilerin ışık alan organlarındaki hücrelerde hangisi bulunmamaktadır?",
+    "choises": {
+      "a":"Lökoplast",
+      "b":"Kromoplast",
+      "c":"Ribozom",
+      "d":"Kloroplast"
+    },
+    "trueAnswer": "a"
+  },
+  {
+    "id": 30,
+    "categoryId": 0,
+    "question": "İnorganik maddelerden besin üreten bir hücrede hangisi kesin olarak bulunur?",
+    "choises": {
+      "a":"Mezozom",
+      "b":"Çekirdek",
+      "c":"Ribozom",
+      "d":"Kloroplast"
+    },
+    "trueAnswer": "c"
+  },
+  {
+    "id": 31,
+    "categoryId": 3,
+    "question": "Vaveyla ne demektir?",
+    "choises": {
+      "a":"Arzu",
+      "b":"Çığlık",
+      "c":"Dinginlik",
+      "d":"Uykusuzluk"
+    },
+    "trueAnswer": "b"
+  },
+  {
+    "id": 32,
+    "categoryId": 3,
+    "question": "Türkiye’nin en fazla yağış alan ili hangisidir?",
+    "choises": {
+      "a":"Rize",
+      "b":"Sakarya",
+      "c":"Kars",
+      "d":"Zonguldak"
+    },
+    "trueAnswer": "a"
+  },
+  {
+    "id": 33,
+    "categoryId": 2,
+    "question": "Galatasaray hangi yıl UEFA kupasını almıştır?",
+    "choises": {
+      "a":"1998",
+      "b":"1999",
+      "c":"2000",
+      "d":"2002"
+    },
+    "trueAnswer": "c"
+  },
+  {
+    "id": 34,
+    "categoryId": 3,
+    "question": "Hangi hayvan memeli değildir?",
+    "choises": {
+      "a":"Yunus",
+      "b":"Köpek",
+      "c":"Yarasa",
+      "d":"Penguen"
+    },
+    "trueAnswer": "d"
+  },
+  {
+    "id": 35,
+    "categoryId": 3,
+    "question": "Kuyucaklı Yusuf eseri kime aittir?",
+    "choises": {
+      "a":"Yaşar Kemal",
+      "b":"Küçük İskender",
+      "c":"Sabahattin Ali",
+      "d":"Halide Edip Adıvar"
+    },
+    "trueAnswer": "c"
+  },
+  {
+    "id": 36,
+    "categoryId": 2,
+    "question": "İlk Dünya Kupası'nın şampiyonu olan takım hangisidir?",
+    "choises": {
+      "a":"Brezilya",
+      "b":"Arjantin",
+      "c":"Uruguay",
+      "d":"Norveç"
+    },
+    "trueAnswer": "c"
+  },
+  {
+    "id": 37,
+    "categoryId": 2,
+    "question": "Futbol maçlarında sahada toplam kaç oyuncu vardır?",
+    "choises": {
+      "a":"24",
+      "b":"22",
+      "c":"18",
+      "d":"26"
+    },
+    "trueAnswer": "b"
+  },
+  {
+    "id": 38,
+    "categoryId": 2,
+    "question": "UEFA Kupası'nı alan ilk Türk takım hangisidir?",
+    "choises": {
+      "a":"Fenerbahçe",
+      "b":"Galatasaray",
+      "c":"Beşiktaş",
+      "d":"Trabzonspor"
+    },
+    "trueAnswer": "b"
+  },
+  {
+    "id": 39,
+    "categoryId": 3,
+    "question": "Everest Dağı'na tırmanan ilk Türk dağcı kimdir?",
+    "choises": {
+      "a":"Nasuh Mahruki",
+      "b":"Tolga Çelik",
+      "c":"Mehmet Genç",
+      "d":"Esra Güzel"
+    },
+    "trueAnswer": "a"
+  },
+  {
+    "id": 40,
+    "categoryId": 3,
+    "question": "Everest Dağı'na tırmanan ilk Türk dağcı kimdir?",
+    "choises": {
+      "a":"Nasuh Mahruki",
+      "b":"Tolga Çelik",
+      "c":"Mehmet Genç",
+      "d":"Esra Güzel"
+    },
+    "trueAnswer": "a"
+  },
+  {
+    "id": 41,
+    "categoryId": 3,
+    "question": "Burjuva ne anlama gelir?",
+    "choises": {
+      "a":"Köylü",
+      "b":"Kentsoylu",
+      "c":"Esprili",
+      "d":"Görgüsüz"
+    },
+    "trueAnswer": "b"
+  },
+  {
+    "id": 42,
+    "categoryId": 3,
+    "question": "Hindistanın başkenti hangisidir?",
+    "choises": {
+      "a":"Ahmedabad",
+      "b":"Yeni Delhi",
+      "c":"Mumbai",
+      "d":"Maisuru"
+    },
+    "trueAnswer": "b"
+  },
+  {
+    "id": 43,
+    "categoryId": 3,
+    "question": "Hindistanın başkenti hangisidir?",
+    "choises": {
+      "a":"Ahmedabad",
+      "b":"Yeni Delhi",
+      "c":"Mumbai",
+      "d":"Maisuru"
+    },
+    "trueAnswer": "b"
+  },
+  {
+    "id": 44,
+    "categoryId": 3,
+    "question": "Pakistan'ın başkenti hangisidir?",
+    "choises": {
+      "a":"Karaçi",
+      "b":"Lahor",
+      "c":"Peşaver",
+      "d":"İslamabad"
+    },
+    "trueAnswer": "d"
+  },
+  {
+    "id": 45,
+    "categoryId": 3,
+    "question": "İlk ve tek Türk Eurovision birincisi kimdir?",
+    "choises": {
+      "a":"Can Bonomo",
+      "b":"Athena",
+      "c":"Manga",
+      "d":"Sertap Erener"
+    },
+    "trueAnswer": "d"
+  },
+  {
+    "id": 46,
+    "categoryId": 3,
+    "question": "Pırtımpırt nedir?",
+    "choises": {
+      "a":"Yemek",
+      "b":"Çiçek",
+      "c":"Böcek",
+      "d":"Kokarca"
+    },
+    "trueAnswer": "a"
+  },
+  {
+    "id": 47,
+    "categoryId": 3,
+    "question": "Salda Gölü Türkiye’nin hangi şehrinde bulunur?",
+    "choises": {
+      "a":"Yozgat",
+      "b":"Manisa",
+      "c":"Eskişehir",
+      "d":"Burdur"
+    },
+    "trueAnswer": "d"
+  },
+  {
+    "id": 48,
+    "categoryId": 3 ,
+    "question": "Hz. Muhammed'in çok sevdiği ve sürekli yanında yer alan devesinin ismi nedir?",
+    "choises": {
+      "a":"Fasva",
+      "b":"Dasva",
+      "c":"Vasva",
+      "d":"Kasva"
+    },
+    "trueAnswer": "d"
+  },
+  {
+    "id": 49,
+    "categoryId": 0 ,
+    "question": "Çinko, periyodik tabloda hangisiyle ifade edilir?",
+    "choises": {
+      "a":"Zn",
+      "b":"CI",
+      "c":"Mg",
+      "d":"Cr"
+    },
+    "trueAnswer": "a"
+  },
+  {
+    "id": 50,
+    "categoryId": 2 ,
+    "question": "Turkcell Süper Lig'de 2009-2010 sezonunun şampiyonu kimdir?",
+    "choises": {
+      "a":"Galatasaray",
+      "b":"Bursaspor",
+      "c":"Fenerbahçe",
+      "d":"Başakşehir"
+    },
+    "trueAnswer": "b"
+  },
+  {
+    "id": 51,
+    "categoryId": 0 ,
+    "question": "Kaç tane rakam vardır?",
+    "choises": {
+      "a":"9",
+      "b":"10",
+      "c":"11",
+      "d":"12"
+    },
+    "trueAnswer": "b"
+  },
+  {
+    "id": 52,
+    "categoryId": 3 ,
+    "question": "Kaç yılda bir Şubat ayı 29 çeker?",
+    "choises": {
+      "a":"2",
+      "b":"3",
+      "c":"4",
+      "d":"5"
+    },
+    "trueAnswer": "c"
+  },
+  {
+    "id": 53,
+    "categoryId": 3 ,
+    "question": "Ferrari şirketinin kurucusunun adı nedir?",
+    "choises": {
+      "a":"Enzo",
+      "b":"Danillo",
+      "c":"Donatello",
+      "d":"Antonio"
+    },
+    "trueAnswer": "a"
+  },
+  {
+    "id": 54,
+    "categoryId": 0 ,
+    "question": "Venüs, Güneş'in etrafındaki turunu kaç günde tamamlar?",
+    "choises": {
+      "a":"225",
+      "b":"245",
+      "c":"342",
+      "d":"365"
+    },
+    "trueAnswer": "a"
+  },
+  {
+    "id": 55,
+    "categoryId": 0 ,
+    "question": "Suyun kaldırma kuvveti kimin ile anılır?",
+    "choises": {
+      "a":"Arşimet",
+      "b":"Newton",
+      "c":"Faraday",
+      "d":"Maxwell"
+    },
+    "trueAnswer": "a"
+  },
+  {
+    "id": 56,
+    "categoryId": 0 ,
+    "question": "Hangisi aliminyumun hammaddesidir?",
+    "choises": {
+      "a":"Toryum",
+      "b":"Uranyum",
+      "c":"Radyum",
+      "d":"Boksit"
+    },
+    "trueAnswer": "d"
+  },
+  {
+    "id": 57,
+    "categoryId": 3 ,
+    "question": "Çoruh hangi ilimizin eski adıdır?",
+    "choises": {
+      "a":"Elazığ",
+      "b":"Mardin",
+      "c":"Erzurum",
+      "d":"Artvin"
+    },
+    "trueAnswer": "d"
+  },
+  {
+    "id": 58,
+    "categoryId": 3 ,
+    "question": "Kaç ABD başkanı suikaste uğrayak öldürülmüştür?",
+    "choises": {
+      "a":"1",
+      "b":"2",
+      "c":"3",
+      "d":"4"
+    },
+    "trueAnswer": "d"
+  },
+  {
+    "id": 59,
+    "categoryId": 0 ,
+    "question": "Penisilinin mucidi kimdir?",
+    "choises": {
+      "a":"Alexander Fleming",
+      "b":"Julije Domac",
+      "c":"Crawford Williamson",
+      "d":"Frederick Banting "
+    },
+    "trueAnswer": "a"
+  },
+  {
+    "id": 60,
+    "categoryId": 0 ,
+    "question": "Abiyotik ne demektir?",
+    "choises": {
+      "a":"Cansızlığa özgü",
+      "b":"İlaç",
+      "c":"Hasta",
+      "d":"Evrim"
+    },
+    "trueAnswer": "a"
+  },
+  {
+    "id": 61,
+    "categoryId": 0 ,
+    "question": "Anoksi ne demektir?",
+    "choises": {
+      "a":"Beyin Hasarı",
+      "b":"Oksijen Yetmezliği",
+      "c":"Ölüm",
+      "d":"Akıntı"
+    },
+    "trueAnswer": "b"
+  },
+  {
+    "id": 62,
+    "categoryId": 0 ,
+    "question": "Anoksi ne demektir?",
+    "choises": {
+      "a":"Beyin Hasarı",
+      "b":"Oksijen Yetmezliği",
+      "c":"Ölüm",
+      "d":"Akıntı"
+    },
+    "trueAnswer": "b"
+  },
+  {
+    "id": 63,
+    "categoryId": 0 ,
+    "question": "Tayga nedir?",
+    "choises": {
+      "a":"Orman Türü",
+      "b":"Uzay cismi",
+      "c":"Altın",
+      "d":"Sinek"
+    },
+    "trueAnswer": "a"
+  },
+  {
+    "id": 63,
+    "categoryId": 0 ,
+    "question": "Fosilleri inceleyen bilim dalı hangisidir?",
+    "choises": {
+      "a":"Limnoloji",
+      "b":"Paleontoloji",
+      "c":"Jeomorfoloji",
+      "d":"Epigrafi"
+    },
+    "trueAnswer": "b"
+  },
+  {
+    "id": 64,
+    "categoryId": 0 ,
+    "question": "Çalgıları inceleyen bilim dalı nedir?",
+    "choises": {
+      "a":"Müzikoloji",
+      "b":"Filoloji",
+      "c":"Organoloji",
+      "d":"Notoloji"
+    },
+    "trueAnswer": "c"
+  },
+  {
+    "id": 65,
+    "categoryId": 0 ,
+    "question": "Eski çağlardan günümüze kadar kullanılan mühürleri, armaları, bayrakları inceleyen bilim dalı nedir?",
+    "choises": {
+      "a":"Epigrafi",
+      "b":"Paleografi",
+      "c":"Heraldik",
+      "d":"Speleoloji"
+    },
+    "trueAnswer": "c"
+  },
+  {
+    "id": 66,
+    "categoryId": 0 ,
+    "question": "5 katının 5'e bölümü 5'e eşit olan sayının 5 fazlasının 5 eksiği kaça eşittir?",
+    "choises": {
+      "a":"5",
+      "b":"25",
+      "c":"45",
+      "d":"55"
+    },
+    "trueAnswer": "a"
+  },
+  {
+    "id": 67,
+    "categoryId": 0 ,
+    "question": "Yarısının 2 katı 122 olan sayının 18 fazlası kaçtır?",
+    "choises": {
+      "a":"88",
+      "b":"110",
+      "c":"140",
+      "d":"160"
+    },
+    "trueAnswer": "c"
+  },
+  {
+    "id": 68,
+    "categoryId": 0 ,
+    "question": "Ölçüsü 80 derece olan açı nasıl açıdır?",
+    "choises": {
+      "a":"Dik",
+      "b":"Dar",
+      "c":"Doğru",
+      "d":"Tam"
+    },
+    "trueAnswer": "b"
+  },
+  {
+    "id": 69,
+    "categoryId": 0 ,
+    "question": "Üçün üç katından ikinin iki katı çıkartılırsa sonuç kaç olur?",
+    "choises": {
+      "a":"2",
+      "b":"3",
+      "c":"4",
+      "d":"5"
+    },
+    "trueAnswer": "d"
+  },
+  {
+    "id": 70,
+    "categoryId": 2 ,
+    "question": "Aşağıdakilerden hangisi bir spor dalıdır?",
+    "choises": {
+      "a":"Bocce",
+      "b":"Ducce",
+      "c":"Kocce",
+      "d":"Nocce"
+    },
+    "trueAnswer": "a"
+  }
+]

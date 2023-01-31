@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <radialGradient id="a" cx="24.837" cy="36.421" r="15.645" gradientTransform="matrix(1 0 0 .53672 0 16.873)" gradientUnits="userSpaceOnUse">
+   <stop offset="0"/>
+   <stop stop-opacity="0" offset="1"/>
+  </radialGradient>
+  <radialGradient id="d" cx="23.243" cy="5.8936" r="17.171" gradientTransform="matrix(2.0467 0 0 1.5576 263.55 24.793)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#fff" stop-opacity="0" offset="1"/>
+  </radialGradient>
+  <radialGradient id="c" cx="3.3292" cy="4.4322" r="16.956" gradientTransform="matrix(-.012108 1.9339 -2.4536 -.015362 305.26 23.911)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fee39e" offset="0"/>
+   <stop stop-color="#f18c00" offset=".24"/>
+   <stop stop-color="#ec6600" offset=".5"/>
+   <stop stop-color="#e83a00" offset="1"/>
+  </radialGradient>
+  <radialGradient id="b" cx="298.87" cy="57.582" r="19" gradientTransform="matrix(-.001734 1.5114 -3.2195 -.003694 486.05 -417.26)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#f5a300" offset="0"/>
+   <stop stop-color="#f18c00" offset=".22"/>
+   <stop stop-color="#aa2900" offset="1"/>
+  </radialGradient>
+ </defs>
+ <g transform="translate(-285.67 -23.75)">
+  <path transform="matrix(1.2712 0 0 1.2712 278.1 10.125)" d="m40.482 36.421c0 4.6375-7.0044 8.3969-15.645 8.3969s-15.645-3.7594-15.645-8.3969 7.0044-8.3969 15.645-8.3969 15.645 3.7594 15.645 8.3969z" fill="url(#a)" fill-rule="evenodd" opacity=".2995"/>
+  <path d="m328.72 28.903h-5.9962v15.125l-18.004-15.094-0.0625 7.9688h-12.938v17.969h12.938v8.0312l18.066-15.375v15.373h5.9962v-33.998z" fill="url(#c)" fill-rule="evenodd" stroke="url(#b)" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+  <path d="m305.21 29.986-0.0527 7.4203-12.938-0.0015-3e-3 7.2819c9.375 7.625 22.529-9.2005 36.029 2.7995l-0.0296-18.087-4.9932 0.0036 0.0147 15.722z" fill="url(#d)" fill-rule="evenodd" opacity=".508"/>
+  <path d="m323.72 29.906v32h4v-32h-4zm-18 1.1562-0.0625 6.8438h-12.938v15.969h12.938v6.875l17.594-14.969-17.531-14.719z" fill="none" opacity=".7" stroke="#fff" stroke-miterlimit="10"/>
+ </g>
+</svg>
