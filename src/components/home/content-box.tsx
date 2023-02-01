@@ -119,7 +119,7 @@ export default function ContentBox({
               <Image
                 fill
                 alt="test"
-                src={hoveredCategory.homePageHoveredImgPath}
+                src={"/assets/homepagebanner.jpeg"}
                 style={{ opacity: 1 }}
          
               />

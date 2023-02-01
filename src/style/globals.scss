@@ -278,12 +278,12 @@ video {
   }
 }
 .true-answer {
-  background-color: green;
-  color: white;
+  background-color: green !important;
+  color: white !important;
 }
 .wrong-answer {
-  background-color: #DC3535;
-  color: white;
+  background-color: #DC3535 !important;
+  color: white !important;
   animation: 1s wrong infinite;
 }
 
