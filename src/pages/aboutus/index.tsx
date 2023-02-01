@@ -7,7 +7,7 @@ import { useDispatch } from "../../store/store";
 import {  setLastChoise, setRetry, setScore } from "../../store/slices/app-slice";
 import HeadComponent from "@/components/head";
 
-export default function index() {
+export default function Index() {
   const dispatch = useDispatch( )
   useEffect(()=>{
     dispatch(setScore(0));
