@@ -18,10 +18,10 @@ interface PostTypes {
 function CountdownTimer({ duration }: { duration: number }) {
   const [timeLeft, setTimeLeft] = useState<number>(duration);
   const [timeOver, setTimeOver] = useState<boolean>(false);
+  const date: string = new Date().toLocaleDateString("tr-TR");
   const { score, retry, selectedCategory } = useSelector(getAppState);
   const dispatch = useDispatch();
-  const date: string = new Date().toLocaleDateString("tr-TR");
-  const quizDataForPostDatabase : PostTypes = {
+  const quizDataForPostDatabase: PostTypes = {
     score: score,
     name: GetFromLocalStorage("userName"),
     date: date,

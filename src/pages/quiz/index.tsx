@@ -9,7 +9,6 @@ import QuizHeader from "@/components/quiz/quiz-header";
 import QuizMain from "@/components/quiz/quiz-main";
 import Image from "next/image";
 import { GetFromLocalStorage } from "@/utils/get-from-local-storage";
-import { GetCategoryFromId } from "@/utils/get-category-from-id";
 export default function index() {
   const router = useRouter();
   const { selectedCategory } = useSelector(getAppState);

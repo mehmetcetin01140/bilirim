@@ -10,10 +10,11 @@ import { GetCategoryFromId } from "@/utils/get-category-from-id";
 type Props = {};
 
 export default function QuizHeader({}: Props) {
-  const { score,isLastChoiseTrueOrFalse,selectedCategory} = useSelector(getAppState);
-  const [dynamicMessage,setDynamicMessage] = useState<string>("")
-  const [duration,setDuration] = useState<number>(30)
-  const scoreRef = useRef <HTMLImageElement>(null);
+  const { score, isLastChoiseTrueOrFalse, selectedCategory } =
+    useSelector(getAppState);
+  const [dynamicMessage, setDynamicMessage] = useState<string>("");
+  const [duration, setDuration] = useState<number>(30);
+  const scoreRef = useRef<HTMLImageElement>(null);
   const firstUpdate = useRef<boolean>(true);
 
   useEffect(() => {
@@ -21,22 +22,21 @@ export default function QuizHeader({}: Props) {
       firstUpdate.current = false;
       return;
     } else {
-
       scoreRef?.current?.classList.add("rotate-horizontally");
       const timeout = setTimeout(() => {
         scoreRef?.current?.classList.remove("rotate-horizontally");
-        
+
         return () => clearTimeout(timeout);
       }, 1000);
     }
   });
-  useEffect(()=>{
-    setDynamicMessage(DynamicScoreMessages(isLastChoiseTrueOrFalse))
-  },[isLastChoiseTrueOrFalse])
+  useEffect(() => {
+    setDynamicMessage(DynamicScoreMessages(isLastChoiseTrueOrFalse));
+  }, [isLastChoiseTrueOrFalse]);
   return (
     <Box
       sx={{
-        height: "20%",
+        height: "162px",
 
         borderBottomLeftRadius: "25px",
         borderBottomRightRadius: "25px",
@@ -112,9 +112,19 @@ export default function QuizHeader({}: Props) {
               border: "2px solid white",
             }}
           >
-            <Typography color="white" sx={{fontSize:{lg:16,xs:13} }} letterSpacing="1px" component="h5">
-          {dynamicMessage ? dynamicMessage : GetCategoryFromId(selectedCategory.categoryId !== null ? selectedCategory.categoryId:-1)}
-          
+            <Typography
+              color="white"
+              sx={{ fontSize: { lg: 16, xs: 13 } }}
+              letterSpacing="1px"
+              component="h5"
+            >
+              {dynamicMessage
+                ? dynamicMessage
+                : GetCategoryFromId(
+                    selectedCategory.categoryId !== null
+                      ? selectedCategory.categoryId
+                      : -1
+                  )}
             </Typography>
           </Box>
         </Grid>

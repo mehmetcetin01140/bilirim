@@ -80,9 +80,9 @@ export default function Choises({
             <Grid item xs={6} key={i}>
               <Item
                 className={`choises-button ${
-                  indexForStyle === i && isCorrectAnswer === true
+                  indexForStyle === i && isCorrectAnswer 
                     ? "true-answer"
-                    : indexForStyle === i && isCorrectAnswer === false
+                    : indexForStyle === i && !isCorrectAnswer 
                     ? "wrong-answer"
                     : ""
                 } ${
@@ -101,9 +101,9 @@ export default function Choises({
                   sx={{
                     fontSize:{lg:18,md:16,sm:15,xs:14},
                     color: `${
-                      indexForStyle === i && isCorrectAnswer === true
+                      indexForStyle === i && isCorrectAnswer
                         ? "true-answer"
-                        : indexForStyle === i && isCorrectAnswer === false
+                        : indexForStyle === i && !isCorrectAnswer
                         ? "wrong-answer"
                         : ""
                     } ${

@@ -11,26 +11,31 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import Image from "next/image";
 import Link from "next/link";
-interface PageTypes{
-  id:number,
-  pageName:string,
-  href:string
+import { useRouter } from "next/router";
+interface PageTypes {
+  id: number;
+  pageName: string;
+  href: string;
+  target?:string
 }
-const pages :PageTypes[] = [{
-  id:0,
-  pageName:"Ana Sayfa",
-  href:"/"
-},
-{
-  id:1,
-  pageName:"Hakkımızda",
-  href:"/aboutus"
-},
-{
-  id:2,
-  pageName:"Bize Ulaşın",
-  href:"/"
-}];
+const pages: PageTypes[] = [
+  {
+    id: 0,
+    pageName: "Ana Sayfa",
+    href: "/",
+  },
+  {
+    id: 1,
+    pageName: "Hakkımızda",
+    href: "/aboutus",
+  },
+  {
+    id: 2,
+    pageName: "Bize Ulaşın",
+    href: "https://mcetinportfolio.netlify.app/",
+    target:"_blank"
+  },
+];
 
 function NavigationBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -47,90 +52,94 @@ function NavigationBar() {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
+  const router = useRouter();
   return (
     <header>
-
-    <AppBar position="static" sx={{ background: "#F108A4" }}>
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-        
+      <AppBar position="static" sx={{ background: "#F108A4" }}>
+        <Container maxWidth="xl">
+          <Toolbar disableGutters>
             <Image width={90} height={90} alt="logo" src={"/assets/logo.png"} />
-        
 
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "flex", md: "none" },
-              justifyContent: "flex-end",
-            }}
-          >
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon style={{ fill: "white" }} />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+            <Box
               sx={{
-                display: { xs: "block", md: "none" },
+                flexGrow: 1,
+                display: { xs: "flex", md: "none" },
+                justifyContent: "flex-end",
               }}
             >
-              <nav>
-
-              {pages.map((page) => (
-                <Link href={page.href} key={page.id} style={{color:"black"}}>
-                <MenuItem key={page.id} onClick={handleCloseNavMenu} sx={{paddingX:2}}>
-                  <Typography textAlign="center">{page.pageName}</Typography>
-                </MenuItem>
-                </Link>
-              ))}
-              </nav>
-            </Menu>
-          </Box>
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                color="inherit"
+              >
+                <MenuIcon style={{ fill: "white" }} />
+              </IconButton>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "left",
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{
+                  display: { xs: "block", md: "none" },
+                }}
+              >
+                <nav>
+                  {pages.map((page) => (
+                    <Link
+                      href={page.href}
+                      key={page.id}
+                      style={{ color: "black" }}
+                    >
+                      <MenuItem
+                        key={page.id}
+                        onClick={handleCloseNavMenu}
+                        sx={{ paddingX: 2 }}
+                      >
+                        <Typography textAlign="center">
+                          {page.pageName}
+                        </Typography>
+                      </MenuItem>
+                    </Link>
+                  ))}
+                </nav>
+              </Menu>
+            </Box>
 
             <nav>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-
-            {pages.map((page) => (
-              <Link href={page.href}      key={page.id}>
-              <Button
-           
-           onClick={handleCloseNavMenu}
-           sx={{
-             my: 2,
-             color: "whitesmoke",
-             display: "block",
-             fontWeight: "bold",
-             textTransform: "none",
-            }}
-            >
-                {page.pageName}
-              </Button>
-                </Link>
-            ))}
-          </Box>
+              <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+                {pages.map((page,i) => (
+                  <Link href={page.href} target={page.target} key={page.id} className={router.pathname == page.href  ? "nav-link" : ""}>
+                    <Button
+                      onClick={handleCloseNavMenu}
+                      sx={{
+                        my: 2,
+                        color: "whitesmoke",
+                        display: "block",
+                        fontWeight: "bold",
+                        textTransform: "none",
+                      }}
+                    >
+                      {page.pageName}
+                    </Button>
+                  </Link>
+                ))}
+              </Box>
             </nav>
-        </Toolbar>
-      </Container>
-    </AppBar>
+          </Toolbar>
+        </Container>
+      </AppBar>
     </header>
   );
 }

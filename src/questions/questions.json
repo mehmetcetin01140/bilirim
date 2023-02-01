@@ -850,5 +850,77 @@
       "d":"Nocce"
     },
     "trueAnswer": "a"
+  },
+  {
+    "id": 71,
+    "categoryId": 1 ,
+    "question": "Mustafa Kemal Atatürk'ün vefat tarihi hangisidir?",
+    "choises": {
+      "a":"10 Kasım 1936",
+      "b":"10 Kasım 1938",
+      "c":"10 Kasım 1939",
+      "d":"10 Kasım 1940"
+    },
+    "trueAnswer": "b"
+  },
+  {
+    "id": 72,
+    "categoryId": 1 ,
+    "question": "1. Dünya Savaşı kaç yılında başlamıştır?",
+    "choises": {
+      "a":"1910",
+      "b":"1914",
+      "c":"1918",
+      "d":"1919"
+    },
+    "trueAnswer": "b"
+  },
+  {
+    "id": 73,
+    "categoryId": 1 ,
+    "question": "1. Dünya Savaşı kaç yıl sürmüştür?",
+    "choises": {
+      "a":"1 Yıl",
+      "b":"2 Yıl",
+      "c":"3 Yıl",
+      "d":"4 Yıl"
+    },
+    "trueAnswer": "d"
+  },
+  {
+    "id": 74,
+    "categoryId": 1 ,
+    "question": "Atatürk öldüğünde kaç yaşındaydı?",
+    "choises": {
+      "a":"55",
+      "b":"56",
+      "c":"57",
+      "d":"58"
+    },
+    "trueAnswer": "c"
+  },
+  {
+    "id": 74,
+    "categoryId": 2 ,
+    "question": "Hangisi 1991'de İngiltere milli futbol takımında beş defa forma giymiş bir futbolcunun soyadıdır?",
+    "choises": {
+      "a":"Maho",
+      "b":"Zaho",
+      "c":"Salako",
+      "d":"Davaro"
+    },
+    "trueAnswer": "c"
+  },
+  {
+    "id": 75,
+    "categoryId": 2 ,
+    "question": "Hangisi 1991'de İngiltere milli futbol takımında beş defa forma giymiş bir futbolcunun soyadıdır?",
+    "choises": {
+      "a":"Maho",
+      "b":"Zaho",
+      "c":"Salako",
+      "d":"Davaro"
+    },
+    "trueAnswer": "c"
   }
 ]

@@ -19,7 +19,7 @@ export default function ContentBox({
   const { homePageHoveredVideo } = hoveredCategory;
   const useMediaQuery = (width: number) => {
     const [targetReached, setTargetReached] = useState(false);
-    const updateTarget = useCallback((e:MediaQueryListEvent) : void => {
+    const updateTarget = useCallback((e: MediaQueryListEvent): void => {
       if (e.matches) {
         setTargetReached(true);
       } else {
@@ -40,8 +40,18 @@ export default function ContentBox({
 
     return targetReached;
   };
-  const isBreakpoint : boolean = useMediaQuery(900);
-
+  const isBreakpoint: boolean = useMediaQuery(900);
+  const conditionalTitleStyle = homePageHoveredVideo
+    ? {
+        border: "2px solid white",
+        borderRadius: 3,
+        backgroundColor: "#0077ffc5",
+        display: "flex",
+        alignItems: "center",
+        boxShadow: " rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;",
+        paddingX:3
+      }
+    : { display: "block" };
   return (
     <>
       <UseInView>
@@ -65,6 +75,7 @@ export default function ContentBox({
                 alt="test"
                 src={hoveredCategory.homePageHoveredImgPath}
                 style={{ opacity: 1 }}
+         
               />
             </Grid>
             <Grid
@@ -80,17 +91,22 @@ export default function ContentBox({
                 loop
               />
               <Box sx={{ padding: 4 }}>
-                <Typography fontSize="36px" color={"whitesmoke"} component="h1">
-                  {GetCategoryOnHover(homePageHoveredVideo)?.name
-                    ? GetCategoryOnHover(homePageHoveredVideo)?.name
-                    : contentBoxProps.title}
-                </Typography>
-                <Typography fontSize={16} color={"whitesmoke"} mt={1}>
-                  {GetCategoryOnHover(homePageHoveredVideo)?.desc
-                    ? ""
-                    : contentBoxProps.content}
-                </Typography>
-
+                <Box sx={conditionalTitleStyle}>
+                  <Typography
+                    fontSize="36px"
+                    color={"whitesmoke"}
+                    component="h1"
+                  >
+                    {GetCategoryOnHover(homePageHoveredVideo)?.name
+                      ? GetCategoryOnHover(homePageHoveredVideo)?.name
+                      : contentBoxProps.title}
+                  </Typography>
+                  <Typography fontSize={16} color={"whitesmoke"} mt={1}>
+                    {GetCategoryOnHover(homePageHoveredVideo)?.desc
+                      ? ""
+                      : contentBoxProps.content}
+                  </Typography>
+                </Box>
                 <ContentBoxCategories isBreakpoint={isBreakpoint} />
               </Box>
             </Grid>
