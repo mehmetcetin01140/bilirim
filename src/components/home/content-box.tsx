@@ -133,6 +133,7 @@ export default function ContentBox({
              {
               categories.map(category=>(
                 <video
+                key={category.id}
                 id="#video"
                 src={category.videoPath}
                 muted
