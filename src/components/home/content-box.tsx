@@ -52,10 +52,56 @@ export default function ContentBox({
         paddingX:3
       }
     : { display: "block" };
+   interface CategoryTypes {
+      id: number;
+      name: string;
+      imgPath: string;
+      hoverPath: string;
+      videoPath: string;
+      desc:string;
+    }
+  const categories: CategoryTypes[] = [
+      {
+        id: 0,
+        name: "Bilim",
+        imgPath:
+          "/assets/sciencemini.jpg",
+        hoverPath: "/assets/science.jpg",
+        videoPath: "/assets/science.mp4",
+        desc:"Bilim sorularıyla kendinizi sınayın. Otuz saniye süreniz ve iki kez soruyu pas geçme hakkınız var."
+      },
+      {
+        id: 1,
+        name: "Tarih",
+        imgPath:
+          "/assets/historymini.jpg",
+        hoverPath: "/assets/history.jpg",
+        videoPath: "/assets/historyy.mp4",
+        desc:"Tarih alanında seçilmiş sorularla kendinizi sınayın. Otuz saniye süreniz ve iki kez soruyu pas geçme hakkınız var."
+      },
+      {
+        id: 2,
+        name: "Spor",
+        imgPath:
+          "/assets/sportsmini.jpg",
+        hoverPath: "/assets/sports.jpg",
+        videoPath: "/assets/sports.mp4",
+        desc:"Çeşitli sporlarla ilgili sorularla kendinizi sınayın. Otuz saniye süreniz ve iki kez soruyu pas geçme hakkınız var."
+      },
+      {
+        id: 3,
+        name: "Karışık",
+        imgPath:
+          "/assets/randommini.jpg",
+        hoverPath: "/assets/mix.jpg",
+        videoPath: "/assets/random.mp4",
+        desc:"Kategori fark etmeksizin çeşitli sorularla kendinizi sınayın. Otuz saniye süreniz ve iki kez soruyu pas geçme hakkınız var."
+      },
+    ];
   return (
     <>
       <UseInView>
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{ flexGrow: 1}}>
           <Grid container>
             <Grid
               item
@@ -83,13 +129,23 @@ export default function ContentBox({
               md={homePageHoveredVideo ? 12 : 6}
               sx={{ position: "relative" }}
             >
-              <video
+         
+             {
+              categories.map(category=>(
+                <video
                 id="#video"
-                src={hoveredCategory.homePageHoveredVideo}
+                src={category.videoPath}
                 muted
                 autoPlay
                 loop
+                style={{visibility:homePageHoveredVideo !== category.videoPath ? "hidden" : "visible"}}
+                
               />
+              ))
+             }
+             
+           
+      
               <Box sx={{ padding: 4 }}>
                 <Box sx={conditionalTitleStyle}>
                   <Typography
