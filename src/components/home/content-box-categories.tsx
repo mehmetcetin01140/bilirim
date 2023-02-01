@@ -40,7 +40,7 @@ export const categories: CategoryTypes[] = [
     imgPath:
       "/assets/historymini.jpg",
     hoverPath: "/assets/history.jpg",
-    videoPath: "/assets/history.mp4",
+    videoPath: "/assets/historyy.mp4",
     desc:"Tarih alanında seçilmiş sorularla kendinizi sınayın. Otuz saniye süreniz ve iki kez soruyu pas geçme hakkınız var."
   },
   {
