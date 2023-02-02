@@ -9,8 +9,8 @@
     U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 a:-webkit-any-link {
-  text-decoration: none;
-  cursor: pointer;
+  text-decoration: none !important;
+  cursor: pointer !important;
 }
 
 body {
