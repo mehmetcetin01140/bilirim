@@ -5,7 +5,6 @@ export interface ThemeStateTypes {
     homePageHoveredImgPath: string;
     homePageHoveredVideo: string;
   }
-  isBackgroundLoading:boolean
 
 }
 interface ActionTypes {
@@ -19,7 +18,6 @@ const initialState: ThemeStateTypes = {
     homePageHoveredImgPath: "/assets/homepagebanner.jpeg",
     homePageHoveredVideo: "",
   },
-  isBackgroundLoading:true
 
 } as const;
 
@@ -34,12 +32,6 @@ export const ThemeSlice = createSlice({
       state.hoveredCategory.homePageHoveredImgPath = action.payload.category;
       state.hoveredCategory.homePageHoveredVideo = action.payload.videoPath;
     },
-    setIsBackgroundLoading: (
-      state: Draft<typeof initialState>,
-      action: PayloadAction<boolean>
-    ) => {
-     state.isBackgroundLoading = action.payload
-    },
   
   },
 });
@@ -48,6 +40,6 @@ export const ThemeSlice = createSlice({
 export const getThemeState = (state: { Theme: ThemeStateTypes }) => state.Theme;
 
 
-export const { setHomePageHoveredCategory,setIsBackgroundLoading } = ThemeSlice.actions;
+export const { setHomePageHoveredCategory } = ThemeSlice.actions;
 
 export default ThemeSlice.reducer;

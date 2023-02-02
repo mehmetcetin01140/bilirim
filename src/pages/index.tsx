@@ -24,18 +24,7 @@ const contentBoxProps: ContentBoxPropTypes[] = [
 ];
 
 export default function Home() {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(setScore(0));
-    dispatch(setLastChoise(null));
-    dispatch(setRetry(false));
-    dispatch(
-      setHomePageHoveredCategory({
-        category: "/assets/homepagebanner.jpg",
-        videoPath: "",
-      })
-    );
-  }, []);
+
   return (
     <Box sx={{ mt: 1.5 }}>
       <HeadComponent title="Bilirim - Bilgi Yarışması" />

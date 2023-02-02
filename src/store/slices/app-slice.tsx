@@ -6,6 +6,7 @@ export interface AppStateTypes {
     categoryId: number | null;
     dialogIsOpen: boolean;
   };
+  isReadyForStart:boolean;
   score: number;
   isLastChoiseTrueOrFalse: null | boolean;
   retry:boolean
@@ -23,6 +24,7 @@ const initialState: AppStateTypes = {
     categoryId: null,
     dialogIsOpen: false,
   },
+  isReadyForStart:false,
   score: 0,
   isLastChoiseTrueOrFalse: null,
   retry:false,
@@ -45,6 +47,12 @@ export const AppSlice = createSlice({
     ) => {
       state.selectedCategory.categoryId = action.payload.categoryId;
       state.selectedCategory.dialogIsOpen = action.payload.dialogIsOpen;
+    },
+    setIsReadyForStart: (
+      state: Draft<typeof initialState>,
+      action: PayloadAction<boolean>
+    ) => {
+      state.isReadyForStart = action.payload;
     },
     setScore: (
       state: Draft<typeof initialState>,
@@ -74,6 +82,7 @@ export const getAppState = (state: { AppSlice: AppStateTypes }) =>
 export const {
   setSnackBarIsOpen,
   setSelectedCategory,
+  setIsReadyForStart,
   setScore,
   setLastChoise,
   setRetry,

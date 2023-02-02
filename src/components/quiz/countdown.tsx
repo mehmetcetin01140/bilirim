@@ -19,7 +19,7 @@ function CountdownTimer({ duration }: { duration: number }) {
   const [timeLeft, setTimeLeft] = useState<number>(duration);
   const [timeOver, setTimeOver] = useState<boolean>(false);
   const date: string = new Date().toLocaleDateString("tr-TR");
-  const { score, retry, selectedCategory } = useSelector(getAppState);
+  const { score, retry, selectedCategory,isReadyForStart } = useSelector(getAppState);
   const dispatch = useDispatch();
   const quizDataForPostDatabase: PostTypes = {
     score: score,
@@ -29,7 +29,7 @@ function CountdownTimer({ duration }: { duration: number }) {
   };
   useEffect(() => {
     setTimeLeft(30);
-    const intervalId = setInterval(() => {
+    const intervalId = isReadyForStart ? setInterval(() => {
       setTimeLeft((timeLeft) => {
         if (timeLeft === 0) {
           setTimeOver(true);
@@ -38,10 +38,10 @@ function CountdownTimer({ duration }: { duration: number }) {
         }
         return timeLeft - 1;
       });
-    }, 1000);
+    }, 1000) : "";
 
     return () => clearInterval(intervalId);
-  }, [retry]);
+  }, [retry,isReadyForStart]);
   useEffect(() => {
     if (timeOver) {
       dispatch(setRetry(true));

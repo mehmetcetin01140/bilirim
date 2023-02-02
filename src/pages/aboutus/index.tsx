@@ -2,18 +2,10 @@ import UseInView from "@/animations/useInView";
 import { Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import Image from "next/image";
-import { useEffect } from "react";
-import { useDispatch } from "../../store/store";
-import {  setLastChoise, setRetry, setScore } from "../../store/slices/app-slice";
 import HeadComponent from "@/components/head";
 
 export default function Index() {
-  const dispatch = useDispatch( )
-  useEffect(()=>{
-    dispatch(setScore(0));
-    dispatch(setLastChoise(null))
-    dispatch(setRetry(false));
-  },[])
+
   return (
     <>
        <HeadComponent title="Hakkımızda" />

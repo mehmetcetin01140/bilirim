@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSelector,useDispatch } from "../../store/store";
-import { getAppState } from "../../store/slices/app-slice";
-import { setIsBackgroundLoading } from "../../store/slices/theme-slice";
+import { getAppState,setIsReadyForStart } from "../../store/slices/app-slice";
 import { useRouter } from "next/router";
 import { Box } from "@mui/system";
 import { Container } from "@mui/material";
@@ -21,6 +20,13 @@ export default function Index() {
     if (!GetFromLocalStorage("userName") || typeof categoryId !== "number") {
       router.push("/");
     }
+    const timer = setTimeout(() => {
+        dispatch(setIsReadyForStart(true))
+    }, 2000);
+
+    return () => {
+      clearTimeout(timer);
+    };
   }, []);
 
   return (
@@ -39,7 +45,7 @@ export default function Index() {
         fill
         src={"/assets/quizbackground.svg"}
         style={{ objectFit: "cover", objectPosition: "bottom", zIndex: "-2" }}
-        onLoad={()=>dispatch(setIsBackgroundLoading(false))}
+
       />
 
       <Box sx={{ height: "90.8vh" }}>
