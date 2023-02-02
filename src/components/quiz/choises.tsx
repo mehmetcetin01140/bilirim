@@ -17,7 +17,7 @@ type Props = {
   setCurrentQuestionIndex: React.Dispatch<React.SetStateAction<number>>;
   setIsSkipButtonDisabled :  React.Dispatch<React.SetStateAction<boolean>>;
 };
-const Item = styled(Paper)(({ theme }) => ({
+const ChoiceButtons = styled(Paper)(({ theme }) => ({
   backgroundColor: "#fafafa",
   ...theme.typography.body2,
   padding: theme.spacing(2),
@@ -78,7 +78,7 @@ export default function Choises({
         {Object.values(currentData?.choises || {}).map(
           (choice: string, i: number) => (
             <Grid item xs={6} key={i}>
-              <Item
+              <ChoiceButtons
                 className={`choises-button ${
                   indexForStyle === i && isCorrectAnswer 
                     ? "true-answer"
@@ -116,7 +116,7 @@ export default function Choises({
                 >
                   {choice}
                 </Typography>
-              </Item>
+              </ChoiceButtons>
             </Grid>
           )
         )}

@@ -110,7 +110,7 @@ export default function DialogComponent() {
             className="dialog-input"
             value={userName}
             onChange={(e) => setUserName(e.target.value)}
-          ></input>
+          />
         </DialogContent>
 
         <DialogActions sx={{ marginTop: "auto" }}>

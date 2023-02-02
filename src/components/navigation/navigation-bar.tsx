@@ -58,7 +58,7 @@ function NavigationBar() {
       <AppBar position="static" sx={{ background: "#F108A4" }}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <Image width={90} height={90} alt="logo" src={"/assets/logo.png"} />
+            <Image width={90} height={90} alt="logo" src={"/assets/logo.png"} className="loader-logo" />
 
             <Box
               sx={{

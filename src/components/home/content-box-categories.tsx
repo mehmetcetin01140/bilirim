@@ -83,7 +83,7 @@ export default function ContentBoxCategories({isBreakpoint}: Props) {
             md={6}
             xs={12}
             key={category.id}
-          
+            
             onClick={() =>{
               if(typeof(GetFromLocalStorage("userName"))=="string"){
                 dispatch(
@@ -121,7 +121,7 @@ export default function ContentBoxCategories({isBreakpoint}: Props) {
             }
           >
             <Box className="categories-box" sx={{marginX:homePageHoveredVideo  ? "15%" : ""}}>
-              <Box sx={{ position: "relative", width: "100%", height: homePageHoveredVideo || isBreakpoint  ? "215px" : "150px" }}>
+              <Box sx={{ position: "relative", width: "100%", height: homePageHoveredVideo || isBreakpoint  ? "230px" : "150px" }}>
                 <Image alt={category.name} fill src={category.imgPath} />
               </Box>
               <Typography textAlign="center" my={1}>

@@ -20,6 +20,22 @@ body {
   padding: 0;
   min-height: 90vh;
 }
+.loader-logo{
+  animation: loading 1.5s ;
+
+
+}
+@keyframes loading{
+  0% {
+    transform: rotate(-180deg)
+  }
+  50%{
+    transform: scale(1.1)
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .nav-link{
   display: inline-block;
   position: relative;
@@ -239,9 +255,9 @@ video {
   }
 }
 .choises-button {
-  transition: 0.2s all;
+  transition: 0.2s all !important;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px !important; 
   &:hover {
     transform: scale(1.03);
     
@@ -336,5 +352,7 @@ video {
 .material-icons {
   vertical-align: middle;
   padding-bottom: 3px }
+
+  
 
   

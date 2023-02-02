@@ -10,6 +10,7 @@ import ContentBoxCategories from "./content-box-categories";
 import { useSelector } from "../../store/store";
 import { getThemeState } from "../../store/slices/theme-slice";
 import { GetCategoryOnHover } from "@/utils/get-category-on-hover";
+import { categories } from "./content-box-categories";
 export default function ContentBox({
   contentBoxProps,
 }: {
@@ -48,60 +49,16 @@ export default function ContentBox({
         backgroundColor: "#0077ffc5",
         display: "flex",
         alignItems: "center",
-        boxShadow: " rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;",
-        paddingX:3
+        boxShadow:
+          " rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;",
+        paddingX: 3,
       }
     : { display: "block" };
-   interface CategoryTypes {
-      id: number;
-      name: string;
-      imgPath: string;
-      hoverPath: string;
-      videoPath: string;
-      desc:string;
-    }
-  const categories: CategoryTypes[] = [
-      {
-        id: 0,
-        name: "Bilim",
-        imgPath:
-          "/assets/sciencemini.jpg",
-        hoverPath: "/assets/science.jpg",
-        videoPath: "/assets/science.mp4",
-        desc:"Bilim sorularıyla kendinizi sınayın. Otuz saniye süreniz ve iki kez soruyu pas geçme hakkınız var."
-      },
-      {
-        id: 1,
-        name: "Tarih",
-        imgPath:
-          "/assets/historymini.jpg",
-        hoverPath: "/assets/history.jpg",
-        videoPath: "/assets/history.mp4",
-        desc:"Tarih alanında seçilmiş sorularla kendinizi sınayın. Otuz saniye süreniz ve iki kez soruyu pas geçme hakkınız var."
-      },
-      {
-        id: 2,
-        name: "Spor",
-        imgPath:
-          "/assets/sportsmini.jpg",
-        hoverPath: "/assets/sports.jpg",
-        videoPath: "/assets/sports.mp4",
-        desc:"Çeşitli sporlarla ilgili sorularla kendinizi sınayın. Otuz saniye süreniz ve iki kez soruyu pas geçme hakkınız var."
-      },
-      {
-        id: 3,
-        name: "Karışık",
-        imgPath:
-          "/assets/randommini.jpg",
-        hoverPath: "/assets/mix.jpg",
-        videoPath: "/assets/random.mp4",
-        desc:"Kategori fark etmeksizin çeşitli sorularla kendinizi sınayın. Otuz saniye süreniz ve iki kez soruyu pas geçme hakkınız var."
-      },
-    ];
+
   return (
     <>
       <UseInView>
-        <Box sx={{ flexGrow: 1}}>
+        <Box sx={{ flexGrow: 1 }}>
           <Grid container>
             <Grid
               item
@@ -121,7 +78,6 @@ export default function ContentBox({
                 alt="test"
                 src={"/assets/homepagebanner.jpeg"}
                 style={{ opacity: 1 }}
-         
               />
             </Grid>
             <Grid
@@ -129,24 +85,23 @@ export default function ContentBox({
               md={homePageHoveredVideo ? 12 : 6}
               sx={{ position: "relative" }}
             >
-         
-             {
-              categories.map(category=>(
+              {categories.map((category) => (
                 <video
-                key={category.id}
-                id="#video"
-                src={category.videoPath}
-                muted
-                autoPlay
-                loop
-                style={{visibility:homePageHoveredVideo !== category.videoPath ? "hidden" : "visible"}}
-                
-              />
-              ))
-             }
-             
-           
-      
+                  key={category.id}
+                  id="#video"
+                  src={category.videoPath}
+                  muted
+                  autoPlay
+                  loop
+                  style={{
+                    visibility:
+                      homePageHoveredVideo !== category.videoPath
+                        ? "hidden"
+                        : "visible",
+                  }}
+                />
+              ))}
+
               <Box sx={{ padding: 4 }}>
                 <Box sx={conditionalTitleStyle}>
                   <Typography
