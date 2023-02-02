@@ -12,7 +12,9 @@ a:-webkit-any-link {
   text-decoration: none !important;
   cursor: pointer !important;
 }
-
+*{
+  text-decoration: none !important;
+}
 body {
   display: flex;
   flex-direction: column;
